@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int Gold_cap,Bens,BBS;
+    scanf("%d%d%d",&Gold_cap,&Bens,&BBS);
+    int Bens_gold=Gold_cap*Bens/100;
+    Gold_cap=Gold_cap-Bens_gold;
+    int BB_Gold=Gold_cap*BBS/100;
+    Gold_cap=Gold_cap-BB_Gold;
+    int p_Gold=Gold_cap/3;
+    printf("%d\n%d\n%d",Bens_gold,BB_Gold,p_Gold);
+    return 0;
+}
