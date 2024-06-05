@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+  int q,p,t,tad;
+  float d=0,g,n;
+  scanf("%d%d",&q,&p);
+  t=p*q;
+  if(q>200) 
+  {
+      d=t*0.20;
+      } 
+      tad=t-d;
+      g=tad*0.18;
+      n=t+g;
+      printf("Quantity Ordered %d\n",q);
+      printf("Price per item is Rs.%d\n",p);
+      printf("Total Amount = Rs.%d\n",tad);
+      printf("GST - Rs.%.1f\n",g);
+      printf("Net Amount Payable is Rs.%.1f",n);
+      return 0;
+}
