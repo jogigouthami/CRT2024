@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+ int  a;
+ void increment()
+{
+    a++;
+    printf("%d/t",a);
+   increment();
+    
+}
+ int main()
+{
+ printf("%d/t",a);
+ increment();
+ increment();
+ return 0;
+}
